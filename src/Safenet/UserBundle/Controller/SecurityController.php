@@ -4,6 +4,7 @@ namespace Safenet\UserBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,6 +15,7 @@ use Symfony\Component\HttpFoundation\Request;
 class SecurityController extends Controller {
     /**
     * @Route("/login", name="login")
+    * @Template
     */
     public function loginAction(Request $request)
     {
@@ -25,13 +27,10 @@ class SecurityController extends Controller {
         // last username entered by the user
         $lastUsername = $authenticationUtils->getLastUsername();
 
-        return $this->render(
-            'UserBundle:Security:login.html.twig',
-            array(
+        return array(
                 // last username entered by the user
                 'last_username' => $lastUsername,
                 'error'         => $error,
-            )
-        );
+            );
     }
 }
