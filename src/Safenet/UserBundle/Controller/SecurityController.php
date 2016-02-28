@@ -32,5 +32,17 @@ class SecurityController extends Controller {
                 'last_username' => $lastUsername,
                 'error'         => $error,
             );
-    }         
+    }
+    /**
+    * @Route("/login_check", name="login_check")
+    */
+    public function loginCheckAction() {
+        
+    }
+    /**
+    * @Route("/logout", name="logout")
+    */
+    public function logoutAction() {
+        
+    }
 }

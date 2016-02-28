@@ -22,8 +22,8 @@ security:
                 check_path: login_check
                 login_path: login
             logout: 
-                path: _demo_logout
-                target: _demo
+                path: logout
+                target: /
             anonymous: ~
     access_control: 
         - {path: /add, roles: ROLE_USER}
