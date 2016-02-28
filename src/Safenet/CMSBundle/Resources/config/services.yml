@@ -1,0 +1,4 @@
+services:
+#    safenet_cms.example:
+#        class: Safenet\CMSBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]

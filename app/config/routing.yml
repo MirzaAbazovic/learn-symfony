@@ -1,0 +1,7 @@
+safenet_cms:
+    resource: "@SafenetCMSBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
