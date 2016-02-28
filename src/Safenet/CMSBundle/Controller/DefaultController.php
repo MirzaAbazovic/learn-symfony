@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('SafenetCMSBundle:Default:index.html.twig');
     }
+    public function addAction()
+    {
+        return $this->render('SafenetCMSBundle:Default:add.html.twig');
+    }
 }

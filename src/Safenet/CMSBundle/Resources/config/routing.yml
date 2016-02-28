@@ -1,3 +1,6 @@
 safenet_cms_homepage:
     path:     /
     defaults: { _controller: SafenetCMSBundle:Default:index }
+add:    
+    path:     /add
+    defaults: { _controller: SafenetCMSBundle:Default:add }
